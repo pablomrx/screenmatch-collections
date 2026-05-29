@@ -8,6 +8,12 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public Titulo(String nome, int anoDeLancamento, boolean incluidoNoPlano) {
+        this.setNome(nome);
+        this.setAnoDeLancamento(anoDeLancamento);
+        this.setIncluidoNoPlano(incluidoNoPlano);
+    }
+
     public String getNome() {
         return nome;
     }
@@ -16,7 +22,7 @@ public class Titulo {
         return anoDeLancamento;
     }
 
-    public boolean isIncluidoNoPlano() {
+    public boolean getIncluidoNoPlano() {
         return incluidoNoPlano;
     }
 
@@ -46,9 +52,9 @@ public class Titulo {
 
     public void exibeFichaTecnica() {
         System.out.println("\n----- Ficha Técnica -----");
-        System.out.println("Nome " + getTipo() + ": " + nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
-        System.out.println("Incluído no plano: " + (incluidoNoPlano ? "Sim" : "Não"));
+        System.out.println("Nome " + getTipo() + ": " + getNome());
+        System.out.println("Ano de lançamento: " + getAnoDeLancamento());
+        System.out.println("Incluído no plano: " + (getIncluidoNoPlano() ? "Sim" : "Não"));
         System.out.printf("Média das avaliações: %.2f\n", obterMedia());
         System.out.println("Total de avaliações: " + totalDeAvaliacoes);
         System.out.println("Duração em minutos: " + getDuracaoEmMinutos());

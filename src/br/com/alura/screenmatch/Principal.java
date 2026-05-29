@@ -13,28 +13,22 @@ public class Principal {
     public static void main(String[] args) {
         Scanner leitura = new Scanner(System.in);
 
-        // FILME 1
-        Filme filme01 = new Filme();
+        // Filme 1
+        Filme filme01 = new Filme("Guardiões da Galáxia", 2014, true, 121);
 
-        filme01.setNome("Guardiões da Galáxia");
+        /*  filme01.setNome("Guardiões da Galáxia");
         filme01.setAnoDeLancamento(2014);
         filme01.setIncluidoNoPlano(true);
-        filme01.setDuracaoEmMinutos(121);
+        filme01.setDuracaoEmMinutos(121);  */
 
         filme01.avalia(8);
         filme01.avalia(9);
         filme01.avalia(10);
 
         filme01.exibeFichaTecnica();
-        System.out.println("esse é o total de avaliações: " + filme01.getTotalDeAvaliacoes());
 
         // Filme 2
-        Filme filme02 = new Filme();
-
-        filme02.setNome("O poderoso Chefão");
-        filme02.setAnoDeLancamento(1972);
-        filme02.setIncluidoNoPlano(false);
-        filme02.setDuracaoEmMinutos(175);
+        Filme filme02 = new Filme("O poderoso chefão", 1972, false, 175);
 
         filme02.avalia(8);
         filme02.avalia(5);
@@ -43,12 +37,7 @@ public class Principal {
         filme02.exibeFichaTecnica();
 
         // Filme 3
-        Filme filme03 = new Filme();
-
-        filme03.setNome("Dogville");
-        filme03.setAnoDeLancamento(2003);
-        filme03.setIncluidoNoPlano(true);
-        filme03.setDuracaoEmMinutos(178);
+        Filme filme03 = new Filme("Dogville", 2003, true, 178);
 
         filme03.avalia(10);
 
@@ -66,10 +55,11 @@ public class Principal {
         System.out.println(listaDeFilmes);
 
         // Serie 1
-        Serie serie01 = new Serie();
-        serie01.setNome("Lost");
+        Serie serie01 = new Serie("Lost", 2004, true);
+
+        /*  serie01.setNome("Lost");
         serie01.setAnoDeLancamento(2004);
-        serie01.setIncluidoNoPlano(true);
+        serie01.setIncluidoNoPlano(true);  */
 
         serie01.avalia(7.4);
         serie01.avalia(2.9);

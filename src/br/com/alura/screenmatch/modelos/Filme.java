@@ -5,6 +5,11 @@ import br.com.alura.screenmatch.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
+    public Filme(String nome, int anoDeLancamento, boolean incluidoNoPlano, int duracaoEmMinutos) {
+        super(nome, anoDeLancamento, incluidoNoPlano);
+        this.setDuracaoEmMinutos(duracaoEmMinutos);
+    }
+
     public String getDiretor() {
         return diretor;
     }
