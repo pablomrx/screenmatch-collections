@@ -49,7 +49,7 @@ public class Titulo {
         System.out.println("Nome " + getTipo() + ": " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Incluído no plano: " + (incluidoNoPlano ? "Sim" : "Não"));
-        System.out.printf("Média das avaliações:  %.2f\n", obterMedia());
+        System.out.printf("Média das avaliações: %.2f\n", obterMedia());
         System.out.println("Total de avaliações: " + totalDeAvaliacoes);
         System.out.println("Duração em minutos: " + getDuracaoEmMinutos());
     }
